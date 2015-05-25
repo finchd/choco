@@ -1,6 +1,6 @@
 language: csharp
 install:
-  - sudo apt-get install mono-devel mono-gmcs
+  - sudo apt-get install mono-devel mono-mcs=3.12.1-0xamarin1 mono-gmcs
   - nuget restore src/chocolatey.sln
 before_script:
   - chmod +x build.sh
